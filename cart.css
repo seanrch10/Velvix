@@ -161,6 +161,31 @@ header h1 {
   border-top: 1px solid #111;
 }
 
+@media (max-width: 500px) {
+  header {
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+
+  .logo {
+    height: 50px;
+    margin-left: 0;
+  }
+
+  .nav-links {
+    position: static;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 14px;
+  }
+
+  .cart-icon {
+    left: auto;
+    right: 20px;
+  }
+}
+
+
 
 @media (max-width: 768px) {
   .cart-item {
