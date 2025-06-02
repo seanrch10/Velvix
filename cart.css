@@ -164,7 +164,8 @@ header h1 {
 @media (max-width: 500px) {
   header {
     justify-content: space-between;
-    padding: 10px 20px;
+    align-items: center;
+    padding: 10px 16px;
   }
 
   .logo {
@@ -173,17 +174,21 @@ header h1 {
   }
 
   .nav-links {
-    position: static;
-    flex-direction: row;
-    gap: 20px;
+    position: absolute;
+    bottom: -30px;
+    right: 16px;
+    gap: 15px;
     font-size: 14px;
   }
 
   .cart-icon {
-    left: auto;
-    right: 20px;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 }
+
 
 
 
