@@ -163,34 +163,33 @@ header h1 {
 
 @media (max-width: 500px) {
   header {
+    display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 16px;
+    position: relative;
   }
 
   .logo {
     height: 50px;
-    margin-left: 0;
+    margin: 0;
   }
 
   .nav-links {
     position: absolute;
-    bottom: -30px;
-    right: 16px;
-    gap: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10px;
+    display: flex;
+    gap: 16px;
     font-size: 14px;
   }
 
   .cart-icon {
-    position: absolute;
-    right: 16px;
-    top: 50%;
-    transform: translateY(-50%);
+    position: static;
+    font-size: 20px;
   }
 }
-
-
-
 
 @media (max-width: 768px) {
   .cart-item {
